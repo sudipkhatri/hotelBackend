@@ -26,11 +26,6 @@ cloudinary.config({
 
 mongoose.connect(process.env.DB_URL as string)
 const app = express();
-// .then(() => {
-//     console.log("connected to database.", process.env.DB_URL);
-// }); //cast this to string as it is typescipt
-
-//app.use(express.static(path.join(__dirname, "../../frontend/disc")))
 
 app.use(cookieParser());
 app.use(express.json());

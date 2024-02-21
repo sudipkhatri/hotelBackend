@@ -45,7 +45,7 @@ export const register = async (req: Request, res: Response) => {
       secure: process.env.NODE_ENV === "production", //for local host it should be false
       maxAge: 86400000,
     });
-    return res.status(200).json({ message: "user registration success" });
+    return res.status(201).json({ message: "user registration success" });
   } catch (error) {
     return res.status(500).json({ message: "Something Went Wrong!" });
   }
